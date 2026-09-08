@@ -10,7 +10,7 @@ An interactive, motion-driven personal portfolio designed with a technical draft
 [![Lenis](https://img.shields.io/badge/Lenis-Smooth_Scroll-000000?style=for-the-badge)](https://lenis.darkroom.engineering/)
 [![Cloudflare](https://img.shields.io/badge/Cloudflare-Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
 
-[**Explore Live Website ↗**](https://nikhilbhadauriya-portfolio.vercel.app/) &nbsp;&bull;&nbsp; [**View Source on GitHub**](https://github.com/Nikhil-beep25/Sketch-Portfolio) &nbsp;&bull;&nbsp; [**Download Resume (PDF)**](https://nikhilbhadauriya-portfolio.vercel.app/cv/Nikhil_Bhadauriya_Resume.pdf)
+[**Explore Live Website ↗**](https://sketch-portfolio-two.vercel.app/) &nbsp;&bull;&nbsp; [**View Source on GitHub**](https://github.com/Nikhil-beep25/Sketch-Portfolio) &nbsp;&bull;&nbsp; [**Download Resume (PDF)**](https://sketch-portfolio-two.vercel.app/cv/Nikhil_Bhadauriya_Resume.pdf)
 
 </div>
 
@@ -125,7 +125,7 @@ Sketch-Portfolio/
 
 3. **Interactive Blueprint Portfolio** — *This Website*
    - Technical drafting aesthetic with procedural SVG paper tear dividers, GSAP timeline scrubbing, and 99+ Lighthouse performance scores.
-   - [Live Demo ↗](https://nikhilbhadauriya-portfolio.vercel.app/) &bull; [Source Code ↗](https://github.com/Nikhil-beep25/Sketch-Portfolio)
+   - [Live Demo ↗](https://sketch-portfolio-two.vercel.app/) &bull; [Source Code ↗](https://github.com/Nikhil-beep25/Sketch-Portfolio)
 
 ---
 

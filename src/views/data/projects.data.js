@@ -100,7 +100,7 @@ export const PROJECTS_DATA = [
     ],
     image: null,
     logo: null,
-    links: { live: "https://sketch-portfolio-two.vercel.app/", repo: "https://github.com/Nikhil-beep25/Sketch-Portfolio" },
+    links: { live: "https://nikhilportfolio-sketch.vercel.app/", repo: "https://github.com/Nikhil-beep25/Sketch-Portfolio" },
     images: [],
     designSystem: {
       palette: [

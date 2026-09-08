@@ -10,7 +10,7 @@ An interactive, motion-driven personal portfolio designed with a technical draft
 [![Lenis](https://img.shields.io/badge/Lenis-Smooth_Scroll-000000?style=for-the-badge)](https://lenis.darkroom.engineering/)
 [![Cloudflare](https://img.shields.io/badge/Cloudflare-Workers-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)](https://workers.cloudflare.com/)
 
-[**Explore Live Website ↗**](https://sketch-portfolio-two.vercel.app/) &nbsp;&bull;&nbsp; [**View Source on GitHub**](https://github.com/Nikhil-beep25/Sketch-Portfolio) &nbsp;&bull;&nbsp; [**Download Resume (PDF)**](https://sketch-portfolio-two.vercel.app/cv/Nikhil_Bhadauriya_Resume.pdf)
+[**Explore Live Website ↗**](https://nikhilportfolio-sketch.vercel.app/) &nbsp;&bull;&nbsp; [**View Source on GitHub**](https://github.com/Nikhil-beep25/Sketch-Portfolio) &nbsp;&bull;&nbsp; [**Download Resume (PDF)**](https://nikhilportfolio-sketch.vercel.app/cv/Nikhil_Bhadauriya_Resume.pdf)
 
 </div>
 
@@ -125,7 +125,7 @@ Sketch-Portfolio/
 
 3. **Interactive Blueprint Portfolio** — *This Website*
    - Technical drafting aesthetic with procedural SVG paper tear dividers, GSAP timeline scrubbing, and 99+ Lighthouse performance scores.
-   - [Live Demo ↗](https://sketch-portfolio-two.vercel.app/) &bull; [Source Code ↗](https://github.com/Nikhil-beep25/Sketch-Portfolio)
+   - [Live Demo ↗](https://nikhilportfolio-sketch.vercel.app/) &bull; [Source Code ↗](https://github.com/Nikhil-beep25/Sketch-Portfolio)
 
 ---
 
@@ -182,7 +182,8 @@ Sketch-Portfolio/
 
 Feel free to connect with me for full-stack engineering roles, technical collaborations, or consulting inquiries:
 
-- **Portfolio**: [nikhilbhadauriya-portfolio.vercel.app](https://nikhilbhadauriya-portfolio.vercel.app/)
+- **Live Website**: [nikhilportfolio-sketch.vercel.app](https://nikhilportfolio-sketch.vercel.app/)
+- **Main Portfolio**: [nikhilbhadauriya-portfolio.vercel.app](https://nikhilbhadauriya-portfolio.vercel.app/)
 - **Email**: [nikhilbhadauriya2500@gmail.com](mailto:nikhilbhadauriya2500@gmail.com)
 - **LinkedIn**: [linkedin.com/in/nikhil-bhadauriya-308414321](https://linkedin.com/in/nikhil-bhadauriya-308414321)
 - **GitHub**: [@Nikhil-beep25](https://github.com/Nikhil-beep25)

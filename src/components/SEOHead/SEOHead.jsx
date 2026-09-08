@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet-async";
 
-const BASE_URL = "https://nikhilbhadauriya-portfolio.vercel.app";
+const BASE_URL = "https://nikhilportfolio-sketch.vercel.app";
 const DEFAULT_OG_IMAGE = `${BASE_URL}/images/og-cover.webp`;
 
 export default function SEOHead({

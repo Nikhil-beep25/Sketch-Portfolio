@@ -15,7 +15,7 @@ const personSchema = {
   "@type": "Person",
   name: "Nikhil Bhadauriya",
   jobTitle: "Python Full Stack Developer",
-  url: "https://nikhilbhadauriya-portfolio.vercel.app/",
+  url: "https://nikhilportfolio-sketch.vercel.app/",
   email: "mailto:nikhilbhadauriya2500@gmail.com",
   sameAs: [
     "https://github.com/Nikhil-beep25",
@@ -48,7 +48,7 @@ const websiteSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "Nikhil Bhadauriya — Portfolio",
-  url: "https://nikhilbhadauriya-portfolio.vercel.app/",
+  url: "https://nikhilportfolio-sketch.vercel.app/",
   description:
     "Personal portfolio of Nikhil Bhadauriya, Python Full Stack Developer & MERN Specialist.",
   author: {

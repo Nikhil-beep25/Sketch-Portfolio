@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nikhilbhadauriya-portfolio.vercel.app/sitemap.xml
+Sitemap: https://nikhilportfolio-sketch.vercel.app/sitemap.xml

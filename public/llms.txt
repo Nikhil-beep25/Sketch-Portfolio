@@ -1,0 +1,17 @@
+# Nikhil Bhadauriya | Python Full Stack Developer
+
+> Nikhil Bhadauriya is a Python Full Stack Developer specializing in MERN stack and Python development, crafting scalable and efficient web applications. Currently working at S O Infotech (P) Ltd in Noida, Uttar Pradesh, India.
+
+## Key Information
+- **Domain**: https://nikhilbhadauriya-portfolio.vercel.app/
+- **GitHub**: https://github.com/Nikhil-beep25
+- **LinkedIn**: https://linkedin.com/in/nikhil-bhadauriya
+- **Email**: nikhilbhadauriya2500@gmail.com
+
+## Main Navigation
+- [Home Page](https://nikhilbhadauriya-portfolio.vercel.app/) - Introduction, experience, contact, and core skillset.
+
+## Projects
+- [Vidya Sanchar](https://nikhilbhadauriya-portfolio.vercel.app/projects/vidya-sanchar) - Student Management System with role-based access control, attendance, and academic records.
+- [Carverse](https://nikhilbhadauriya-portfolio.vercel.app/projects/carverse) - Full-stack Car Rental Management System with real-time vehicle booking and fleet oversight.
+- [Developer Portfolio](https://nikhilbhadauriya-portfolio.vercel.app/projects/portfolio) - Motion-driven blueprint styled portfolio showcasing frontend engineering and creative UI.

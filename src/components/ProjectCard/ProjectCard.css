@@ -1,0 +1,164 @@
+.project-spec-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.project-spec-row__visual {
+  width: 300px;
+  flex-shrink: 0;
+
+  transform-origin: top center;
+  transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.blueprint-card__scanner-zone {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.02);
+
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+@media (hover: hover) {
+  .project-spec-row__visual:hover {
+    transform: rotate(-2deg) translateY(2px);
+  }
+
+  .project-spec-row__visual:hover .blueprint-card__scanner-zone {
+    border-color: rgba(0, 240, 255, 0.4);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  }
+
+  .project-spec-row__title:hover {
+    opacity: 1;
+  }
+}
+
+.blueprint-card__pin {
+  position: absolute;
+  z-index: 3;
+  top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  object-fit: contain;
+}
+
+.blueprint-card__img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blueprint-card__img--sketch {
+  z-index: 1;
+  opacity: 0.85;
+}
+
+.blueprint-card__reveal {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  overflow: hidden;
+  will-change: transform;
+}
+
+.blueprint-card__img--real {
+  will-change: transform;
+  transform: translateZ(0);
+}
+
+.project-spec-row__details {
+  width: calc(100% - 450px);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 325px;
+}
+
+.project-spec-row__description-container {
+  padding: 0;
+  width: max-content;
+}
+
+.project-spec-row__title {
+  font-family: var(--font-sharpie);
+  font-size: 100px;
+  margin: 0;
+  color: var(--color-project-title);
+  opacity: 0.85;
+  letter-spacing: 1px;
+}
+
+.project-spec-row__title-link {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+}
+
+.project-spec-row__description {
+  font-family: var(--font-text);
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+  opacity: 0.85;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .blueprint-card__scanner-zone {
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .blueprint-card__reveal {
+    transform: translateZ(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .project-spec-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    padding: 35px 15px;
+  }
+
+  .project-spec-row__visual {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .project-spec-row__details {
+    width: 100%;
+    max-width: 320px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project-spec-row__title {
+    font-size: 80px;
+  }
+}

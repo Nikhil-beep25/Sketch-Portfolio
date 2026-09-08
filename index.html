@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- CSP is configured via public/_headers for Cloudflare Pages -->
+
+  <!-- Icons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.webp" />
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://nikhilbhadauriya-portfolio.vercel.app/" data-react-helmet="true" />
+
+  <!-- Primary Meta Tags -->
+  <title>Nikhil Bhadauriya | Full Stack Developer</title>
+  <meta name="title" content="Nikhil Bhadauriya | Full Stack Developer" />
+  <meta name="description"
+    content="Nikhil Bhadauriya is a Full Stack Developer specializing in MERN stack and Python development, crafting scalable and efficient web applications." data-react-helmet="true" />
+  <meta name="keywords"
+    content="Nikhil Bhadauriya, Full Stack Developer, MERN Developer, Python Developer, React Developer, Node.js" />
+  <meta name="author" content="Nikhil Bhadauriya" />
+  <meta name="robots" content="index, follow" data-react-helmet="true" />
+  <meta name="theme-color" content="#4a3728" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" data-react-helmet="true" />
+  <meta property="og:url" content="https://nikhilbhadauriya-portfolio.vercel.app/" data-react-helmet="true" />
+  <meta property="og:title" content="Nikhil Bhadauriya | Full Stack Developer" data-react-helmet="true" />
+  <meta property="og:description"
+    content="Full Stack Developer specializing in MERN and Python development. Check out my portfolio showcasing scalable web applications." data-react-helmet="true" />
+  <meta property="og:image" content="https://nikhilbhadauriya-portfolio.vercel.app/images/og-cover.webp" data-react-helmet="true" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Nikhil Bhadauriya — Full Stack Developer Portfolio" />
+  <meta property="og:site_name" content="Nikhil Bhadauriya Portfolio" />
+  <meta property="og:locale" content="en_IN" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" data-react-helmet="true" />
+  <meta name="twitter:url" content="https://nikhilbhadauriya-portfolio.vercel.app/" />
+  <meta name="twitter:title" content="Nikhil Bhadauriya | Full Stack Developer" data-react-helmet="true" />
+  <meta name="twitter:description"
+    content="Full Stack Developer specializing in MERN and Python development. Check out my portfolio showcasing scalable web applications." data-react-helmet="true" />
+  <meta name="twitter:image" content="https://nikhilbhadauriya-portfolio.vercel.app/images/og-cover.webp" data-react-helmet="true" />
+  <meta name="twitter:image:alt" content="Nikhil Bhadauriya — Full Stack Developer Portfolio" />
+
+  <!-- Preload critical fonts to eliminate FOIT -->
+  <link rel="preload" href="/fonts/collage_font.otf" as="font" type="font/otf" crossorigin />
+  <link rel="preload" href="/fonts/sharpie_font.ttf" as="font" type="font/truetype" crossorigin />
+
+  <!-- Preload LCP images to optimize request discovery -->
+  <link rel="preload" href="/images/title/nikhil's--mobile.avif" as="image" type="image/avif" media="(max-width: 550px)"
+    fetchPriority="high" />
+  <link rel="preload" href="/images/title/nikhil's.avif" as="image" type="image/avif" media="(min-width: 551px)"
+    fetchPriority="high" />
+  <link rel="preload" href="/images/title/adventure--mobile.avif" as="image" type="image/avif"
+    media="(max-width: 550px)" fetchPriority="high" />
+  <link rel="preload" href="/images/title/adventure.avif" as="image" type="image/avif" media="(min-width: 551px)"
+    fetchPriority="high" />
+  <link rel="preload" href="/images/title/hero.avif" as="image" type="image/avif" media="(min-width: 551px)"
+    fetchPriority="high" />
+
+  <!-- GA4: preconnect to resolve DNS/TCP ahead of time without blocking -->
+  <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+
+  <!-- Google Analytics -->
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const gaId = "%VITE_GA4_ID%";
+
+      if (!gaId || !gaId.startsWith("G-")) return;
+
+      let gaLoaded = false;
+
+      function loadGA4() {
+        if (gaLoaded) return;
+        gaLoaded = true;
+
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
+        document.head.appendChild(script);
+
+        window.dataLayer = window.dataLayer || [];
+        window.gtag = function () { dataLayer.push(arguments); };
+
+        window.gtag('js', new Date());
+        window.gtag('config', gaId, {
+          'anonymize_ip': true,
+          'page_path': window.location.pathname
+        });
+
+        window.removeEventListener('scroll', loadGA4);
+        window.removeEventListener('mousemove', loadGA4);
+        window.removeEventListener('touchstart', loadGA4);
+      }
+
+      window.addEventListener('scroll', loadGA4, { passive: true });
+      window.addEventListener('mousemove', loadGA4, { passive: true });
+      window.addEventListener('touchstart', loadGA4, { passive: true });
+
+      setTimeout(loadGA4, 2000);
+    });
+  </script>
+</head>
+
+<body>
+  <div id="root">
+    <!-- SEO fallback content for crawlers/non-JS engines (visually hidden) -->
+    <div style="display: none;">
+      <header>
+        <h1>Nikhil Bhadauriya | Full Stack Developer</h1>
+        <p>Welcome to the personal portfolio of Nikhil Bhadauriya, a professional Full Stack Developer
+          specializing in MERN stack and Python development. Currently working as a Python Full Stack Developer
+          at S O Infotech (P) Ltd in Noida, Uttar Pradesh, India, Nikhil builds scalable, efficient, and
+          user-centric web applications using modern technologies and best practices.</p>
+        <nav aria-label="Fallback Navigation">
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Core Engineering Skills &amp; Stack</a></li>
+            <li><a href="#experience">Professional Work Experience</a></li>
+            <li><a href="#projects">Featured Software Projects</a></li>
+            <li><a href="#contact">Contact &amp; Connect</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <section id="about">
+          <h2>About Nikhil Bhadauriya</h2>
+          <p>Nikhil Bhadauriya is a dedicated Full Stack Developer based in Noida, Uttar Pradesh, India.
+            With expertise in both MERN stack and Python development, he specializes in building robust, scalable,
+            and efficient web applications. He is highly proficient in modern technologies including React, Node.js,
+            Express, MongoDB, Python, and various frontend and backend frameworks that power today's digital solutions.</p>
+          <p>Nikhil is passionate about writing clean, maintainable code and creating seamless user experiences.
+            His approach to software development combines strong technical fundamentals with practical problem-solving,
+            ensuring that applications are not only functional but also optimized for performance and scalability.
+            He has a proven ability to work across the full development stack, from designing intuitive user interfaces
+            to implementing complex server-side logic and database architectures.</p>
+          <p>As a developer, Nikhil thrives in collaborative environments where he can contribute to building
+            impactful solutions. He is constantly learning and adapting to new technologies and best practices,
+            ensuring that his skill set remains current and relevant. His dedication to continuous improvement
+            and his ability to tackle challenging technical problems make him a valuable asset to any development team.</p>
+        </section>
+
+        <section id="skills">
+          <h2>Core Engineering Skills &amp; Stack</h2>
+          <p>Nikhil has developed a strong foundation in full stack development, with expertise spanning both
+            frontend and backend technologies. His skill set covers the complete application development lifecycle:</p>
+          <ul>
+            <li><strong>MERN Stack Development:</strong> Proficient in building modern web applications using MongoDB,
+              Express.js, React, and Node.js. Experienced in creating RESTful APIs, implementing state management with
+              Redux, and developing responsive user interfaces with React hooks and component-based architecture.</li>
+            <li><strong>Python Full Stack Development:</strong> Skilled in Python web frameworks including Django and
+              Flask for building scalable backend systems. Experienced in integrating Python with various databases,
+              implementing authentication systems, and developing data-driven applications.</li>
+            <li><strong>Frontend Technologies:</strong> Strong command of HTML5, CSS3, JavaScript (ES6+), and modern
+              frontend libraries. Focused on creating responsive designs, ensuring cross-browser compatibility, and
+              implementing intuitive user interfaces that enhance user experience.</li>
+            <li><strong>Database Management:</strong> Experience with both SQL databases (MySQL, PostgreSQL) and NoSQL
+              solutions (MongoDB). Proficient in database design, query optimization, and implementing efficient data
+              models for web applications.</li>
+            <li><strong>Development Tools &amp; Practices:</strong> Familiar with version control using Git, collaborative
+              development workflows, debugging techniques, and following coding best practices to maintain clean and
+              maintainable codebases.</li>
+          </ul>
+        </section>
+
+        <section id="experience">
+          <h2>Professional Work Experience</h2>
+
+          <h3>Python Full Stack Developer at S O Infotech (P) Ltd</h3>
+          <p>Currently, Nikhil serves as a Python Full Stack Developer at S O Infotech (P) Ltd, located in Noida,
+            Uttar Pradesh, India. In this role, he develops and maintains full-stack web applications using Python
+            frameworks on the backend and modern JavaScript technologies on the frontend. His work involves designing
+            scalable application architectures, implementing RESTful APIs, and creating responsive user interfaces that
+            deliver excellent user experiences.</p>
+          <p>At S O Infotech, Nikhil contributes to the complete software development lifecycle, from requirement
+            analysis and system design to implementation, testing, and deployment. He collaborates with cross-functional
+            teams to deliver robust solutions that meet client requirements while maintaining code quality and following
+            industry best practices. His technical expertise in both MERN stack and Python development allows him to
+            work effectively across different project requirements and technology stacks.</p>
+        </section>
+
+        <section id="projects">
+          <h2>Featured Software Projects</h2>
+          <p>Nikhil has developed several web applications showcasing his full stack development capabilities.
+            Below are his featured projects:</p>
+
+          <h3>1. <a href="/projects/vidya-sanchar">Vidya Sanchar - Student Management System</a></h3>
+          <p>Vidya Sanchar is a comprehensive Student Management System designed to streamline academic administration
+            and enhance the educational experience for both students and faculty. Built using modern full stack
+            technologies, this system provides a centralized platform for managing student records, attendance tracking,
+            grade management, and academic communications.</p>
+          <p>The application features role-based access control for administrators, teachers, and students, ensuring
+            secure and appropriate access to information. With an intuitive interface and efficient database design,
+            Vidya Sanchar simplifies complex administrative tasks and improves communication between all stakeholders
+            in the educational ecosystem.</p>
+
+          <h3>2. <a href="/projects/carverse">Carverse - Car Rental Management System</a></h3>
+          <p>Carverse is a sophisticated Car Rental Management System that facilitates the complete workflow of vehicle
+            rental operations. The platform enables customers to browse available vehicles, make reservations, and manage
+            their bookings seamlessly while providing administrators with powerful tools to manage inventory, track
+            rentals, and monitor business operations.</p>
+          <p>Built with a focus on user experience and operational efficiency, Carverse incorporates features such as
+            real-time vehicle availability checking, automated booking confirmations, payment processing integration, and
+            comprehensive reporting dashboards. The system demonstrates advanced CRUD operations, relational database
+            design, and responsive frontend implementation across multiple user roles.</p>
+
+          <h3>3. <a href="/projects/portfolio">Developer Portfolio (This Website)</a></h3>
+          <p>This personal portfolio website showcases creative frontend development and modern web design principles.
+            Built with React and optimized for performance, the site features smooth animations, responsive layouts, and
+            an intuitive navigation structure that provides visitors with an engaging overview of professional experience,
+            technical skills, and project work.</p>
+          <p>The portfolio demonstrates proficiency in modern web technologies including React component architecture,
+            CSS animations, and performance optimization techniques. Every element has been carefully crafted to ensure
+            fast load times, excellent user experience, and strong SEO fundamentals.</p>
+        </section>
+
+        <section>
+          <h2>Development Philosophy &amp; Approach</h2>
+          <p>Nikhil approaches software development with a focus on writing clean, efficient, and maintainable code.
+            He follows modern development methodologies and best practices to ensure that applications are scalable,
+            secure, and perform optimally. His development process emphasizes thorough testing, code reviews, and
+            continuous integration to maintain high-quality standards throughout the development lifecycle.</p>
+          <p>He places strong emphasis on user experience and performance optimization. Understanding that great
+            applications must be both functional and user-friendly, Nikhil ensures proper semantic HTML structure,
+            responsive design principles, and optimized loading times. His comprehensive approach to web development
+            ensures that the applications he builds deliver value to end-users while maintaining technical excellence
+            and code quality.</p>
+        </section>
+
+        <section id="contact">
+          <h2>Contact &amp; Connect</h2>
+          <p>If you are looking to collaborate on full-stack web applications, MERN or Python development projects,
+            Nikhil is open to discussing new opportunities and contributing to meaningful projects. He is dedicated
+            to building robust and efficient solutions that make a real impact. You can reach him via email at <a
+              href="mailto:nikhilbhadauriya2500@gmail.com">nikhilbhadauriya2500@gmail.com</a>. Let's build something great together!
+          </p>
+        </section>
+      </main>
+    </div>
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
+</html>

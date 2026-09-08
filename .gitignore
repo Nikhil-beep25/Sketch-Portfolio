@@ -34,3 +34,5 @@ scratch
 .dev.vars*
 !.dev.vars.example
 !.env.example
+.vercel
+.env*

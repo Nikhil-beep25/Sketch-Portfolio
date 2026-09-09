@@ -4,6 +4,7 @@ import gsap from "gsap";
 
 import PaperContainer from "../PaperContainer/PaperContainer.jsx";
 import { DOOR_MARGIN } from "../../constants/constants";
+import { useSound } from "../../context/SoundContext.jsx";
 
 import "./Door.css";
 
@@ -12,33 +13,12 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Door({ openImage, closedImage, label }) {
   const doorRef = useRef(null);
   const imageRef = useRef(null);
-  const doorSoundRef = useRef(null);
+  const { playDoorSound } = useSound();
+  const playDoorSoundRef = useRef(playDoorSound);
 
   useEffect(() => {
-    const audio = new Audio("/sounds/Door.webm");
-    audio.preload = "auto";
-    audio.volume = 0.4;
-    doorSoundRef.current = audio;
-
-    const unlockAudio = () => {
-      if (doorSoundRef.current) {
-        doorSoundRef.current.load();
-      }
-      window.removeEventListener("pointerdown", unlockAudio);
-      window.removeEventListener("keydown", unlockAudio);
-      window.removeEventListener("touchstart", unlockAudio);
-    };
-
-    window.addEventListener("pointerdown", unlockAudio, { once: true });
-    window.addEventListener("keydown", unlockAudio, { once: true });
-    window.addEventListener("touchstart", unlockAudio, { once: true, passive: true });
-
-    return () => {
-      window.removeEventListener("pointerdown", unlockAudio);
-      window.removeEventListener("keydown", unlockAudio);
-      window.removeEventListener("touchstart", unlockAudio);
-    };
-  }, []);
+    playDoorSoundRef.current = playDoorSound;
+  }, [playDoorSound]);
 
   useEffect(() => {
     if (!doorRef.current) return;
@@ -57,15 +37,8 @@ export default function Door({ openImage, closedImage, label }) {
             wrapper.classList.remove("is-closed");
             if (img && openImage) img.src = openImage;
 
-            const sound = doorSoundRef.current;
-            if (sound) {
-              sound.currentTime = 0;
-              sound.play().catch((err) => {
-                console.warn(
-                  "The browser blocked the audio or the path is incorrect. Click on the screen first:",
-                  err
-                );
-              });
+            if (playDoorSoundRef.current) {
+              playDoorSoundRef.current();
             }
           } else {
             wrapper.classList.add("is-closed");

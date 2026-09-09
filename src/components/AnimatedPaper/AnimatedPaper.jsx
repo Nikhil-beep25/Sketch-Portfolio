@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import PaperContainer from "../PaperContainer/PaperContainer.jsx";
+import { useSound } from "../../context/SoundContext.jsx";
 import "./AnimatedPaper.css";
 
-const SOUND_PATH = "/sounds/Paper.webm";
 const FRAME_1 = "images/animatedPaper/frame_01.avif";
 const FRAME_2 = "images/animatedPaper/frame_02.avif";
 
@@ -21,25 +21,13 @@ export default function AnimatedPaper({ isOpen, onClose, children }) {
   
   const modalRef = useRef(null);
   const previousFocusRef = useRef(null);
-  const audioRef = useRef(null);
+  const { playPaperSound } = useSound();
 
   useEffect(() => {
     const img1 = new Image();
     img1.src = FRAME_1;
     const img2 = new Image();
     img2.src = FRAME_2;
-
-    const audio = new Audio(SOUND_PATH);
-    audio.preload = "auto";
-    audio.volume = 0.5;
-    audioRef.current = audio;
-
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current = null;
-      }
-    };
   }, []);
 
   useEffect(() => {
@@ -50,11 +38,7 @@ export default function AnimatedPaper({ isOpen, onClose, children }) {
       setShouldRender(true);
       setStep(1);
 
-      if (audioRef.current) {
-        audioRef.current.currentTime = 0;
-        audioRef.current.play().catch(() => {
-        });
-      }
+      playPaperSound();
 
       frame2Timer = setTimeout(() => setStep(2), 300);
       frame3Timer = setTimeout(() => setStep(3), 500);

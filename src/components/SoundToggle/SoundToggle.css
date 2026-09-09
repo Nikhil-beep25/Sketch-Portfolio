@@ -1,0 +1,127 @@
+.sound-toggle {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 120;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px 8px 10px;
+
+  background: rgba(245, 240, 232, 0.94);
+  backdrop-filter: blur(4px);
+  color: #4a3728;
+  font-family: var(--font-sharpie), sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+
+  border: 2px dashed rgba(74, 55, 40, 0.4);
+  border-radius: 6px;
+  cursor: pointer;
+  user-select: none;
+
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.18),
+              0 1px 3px rgba(0, 0, 0, 0.12);
+  transform: rotate(-1deg);
+  transition: transform 0.25s cubic-bezier(0.175, 0.885, 0.32, 1.275),
+              background-color 0.2s ease,
+              border-color 0.2s ease,
+              box-shadow 0.2s ease,
+              color 0.2s ease;
+}
+
+.sound-toggle:hover {
+  transform: rotate(0deg) scale(1.06) translateY(-2px);
+  background: rgba(255, 252, 245, 0.98);
+  border-color: rgba(74, 55, 40, 0.7);
+  box-shadow: 3px 6px 14px rgba(0, 0, 0, 0.24);
+}
+
+.sound-toggle:active {
+  transform: scale(0.96) translateY(1px);
+}
+
+.sound-toggle:focus-visible {
+  outline: 3px solid #0d4f7c;
+  outline-offset: 3px;
+}
+
+/* Muted state */
+.sound-toggle.is-muted {
+  color: #8c7365;
+  background: rgba(235, 230, 222, 0.92);
+  border-color: rgba(140, 115, 101, 0.45);
+}
+
+.sound-toggle.is-muted .sound-toggle__slash {
+  stroke: #c62828;
+  stroke-width: 2.5;
+}
+
+/* Icon */
+.sound-toggle__icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.sound-toggle__icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  overflow: visible;
+}
+
+/* Animated sound waves */
+.sound-toggle.is-active .sound-toggle__wave--inner {
+  animation: wave-pulse 1.8s ease-in-out infinite;
+}
+
+.sound-toggle.is-active .sound-toggle__wave--outer {
+  animation: wave-pulse 1.8s ease-in-out infinite 0.3s;
+}
+
+@keyframes wave-pulse {
+  0%, 100% {
+    opacity: 0.35;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.sound-toggle__label {
+  line-height: 1;
+  white-space: nowrap;
+}
+
+/* Mobile & Touch Responsive */
+@media (max-width: 600px) {
+  .sound-toggle {
+    bottom: 16px;
+    right: 16px;
+    padding: 7px 11px 7px 9px;
+    font-size: 0.75rem;
+    gap: 6px;
+  }
+
+  .sound-toggle__icon-wrap,
+  .sound-toggle__icon {
+    width: 17px;
+    height: 17px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sound-toggle,
+  .sound-toggle__wave {
+    animation: none !important;
+    transition: none !important;
+  }
+}

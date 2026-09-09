@@ -1,6 +1,8 @@
 import { useEffect, lazy, Suspense } from "react";
 import { createBrowserRouter, RouterProvider, Outlet, ScrollRestoration, Navigate } from "react-router-dom";
 import SkipNav from "./components/SkipNav/SkipNav.jsx";
+import SoundToggle from "./components/SoundToggle/SoundToggle.jsx";
+import { SoundProvider } from "./context/SoundContext.jsx";
 
 import Home from "./views/Home/Home";
 import ProjectDetails from "./views/ProjectDetails/ProjectDetails";
@@ -17,6 +19,7 @@ function RootLayout() {
   return (
     <>
       <SkipNav />
+      <SoundToggle />
       <Outlet />
       <ScrollRestoration />
     </>
@@ -80,6 +83,10 @@ export default function App() {
     };
   }, []);
 
-  return <RouterProvider router={router} />;
+  return (
+    <SoundProvider>
+      <RouterProvider router={router} />
+    </SoundProvider>
+  );
 }
 
